@@ -1,0 +1,24 @@
+.footer-page {
+  position: relative;
+  background-color: #2d3436;
+  color: #ffffff; }
+  .footer-page .text-smaller {
+    font-weight: 400; }
+  .footer-page .text-smallest {
+    font-weight: 400; }
+  .footer-page .text-extra-big {
+    font-weight: 900; }
+  .footer-page a {
+    color: #ffffff; }
+  .footer-page .footer-menu {
+    padding-top: 35px;
+    padding-bottom: 35px; }
+  .footer-page .footer-mark {
+    padding-top: 20px;
+    padding-bottom: 10px; }
+  .footer-page .footer-watermark {
+    position: absolute;
+    left: 30px;
+    bottom: 10px;
+    color: rgba(255, 255, 255, 0.01);
+    pointer-events: none; }

@@ -1,0 +1,34 @@
+.home-page-banner .text-biggest {
+  font-weight: 900;
+  color: #19243b; }
+
+.home-page-banner .text-small {
+  font-weight: 500;
+  color: #808ba5; }
+
+.home-page-banner .normal-image {
+  padding-right: 15px;
+  max-height: 550px;
+  max-width: 570px; }
+
+.home-page-banner .normal-button {
+  color: #ffffff;
+  font-weight: 700; }
+
+@media (max-width: 768px) {
+  .home-page-banner .normal-image {
+    display: flex;
+    max-height: 220px;
+    max-width: 230px; } }
+
+@media (max-width: 768px) {
+  .home-page-banner {
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    background-size: 50%; } }
+
+@media (max-width: 768px) {
+  .col-padding-top {
+    display: flex;
+    justify-content: center; } }

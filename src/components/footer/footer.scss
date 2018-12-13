@@ -1,0 +1,35 @@
+@import 'shared/style/_variables';
+
+.footer-page {
+    position: relative;
+    background-color: $dark;
+    color: $white;
+    .text-smaller {
+        font-weight: 400;
+    }
+    .text-smallest {
+        font-weight: 400;
+    }
+    .text-extra-big {
+        font-weight: 900;
+    }
+    a {
+        color: $white;
+    }
+    .footer-menu {
+        padding-top: 35px;
+        padding-bottom:  35px;
+    }
+
+    .footer-mark {
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .footer-watermark {
+        position: absolute;
+        left: 30px;
+        bottom: 10px;        
+        color: rgba(255, 255, 255, 0.01);
+        pointer-events: none;
+    }
+}

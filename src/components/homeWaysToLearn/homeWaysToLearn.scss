@@ -1,0 +1,209 @@
+@import 'shared/style/_variables';
+
+.home-ways-to-learn {
+  width: 100%;
+  height: 36vw;
+  min-height: 430px;
+  background: linear-gradient(to right, $blue, $blue-light);
+  position: relative;
+  .circuit-background {
+    display: flex;
+    height: 100%;
+    width: 100%;
+  }
+  .circuit-background-left {
+    height: 100%;
+    background-image: url("../../assets/circuit.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .circuit-background-right {
+    height: 100%;
+    background-image: url("../../assets/circuit.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  .container {
+    position: absolute;
+    top: -60px;
+    left: 0px;
+    right: 0px;
+  }
+  .content {
+    margin: 0px 15px;
+    background-color: $white-dark;
+    padding-top: 45px;
+    padding-bottom: 145px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 1px 5px 25px 0 rgba(0, 0, 0, 0.15);
+    .text-big {
+      font-weight: 700;
+      color: $black;
+    }
+    .comment {
+      padding-top: 10px;
+      font-weight: 500;
+      color: $grey;
+      margin-bottom: 15px;
+    }
+    .contents {
+      position: relative;
+    }
+    .line {
+      width: 100%;
+      height: 1px;
+      background-color: $grey-light;
+      position: absolute;
+      top: 144px;
+    }
+    .content-area {
+      padding: 0px 82px;
+    }
+    @media (max-width: $medium) {
+      .content-area {
+        padding: 0px 30px;
+      }
+    }
+    .content-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .pin {
+        width: 50px;
+        height: 40px;
+      }
+      .main-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        padding-bottom: 65px;
+        
+        .content-icon {
+          width: 60px;
+          height: 60px;
+          margin-bottom: 15px;
+        }
+        .content-oval {
+          width: 8px;
+          height: 8px;
+          border-radius: 100%;
+          background-image: linear-gradient(to bottom, $orange-light, $orange);
+          margin-bottom: 15px;
+        }
+        .item-title {
+          font-weight: 700;
+          color: $black;
+          margin-bottom: 15px;
+        }
+        .item-contents {
+          font-weight: 400;
+          color: $grey;
+        }
+        @media (max-width: $medium) {
+          .item-contents {
+            display: none;
+          }
+        }
+      }
+      @media (max-width: $large) {
+        .main-content {
+          padding: 20px 0px 45px;
+        }
+      }
+    }
+    @media (max-width: $large) {
+      .line {
+        top: 139px;
+      }
+    }
+    .content-item:hover {
+      cursor: pointer;
+      .pin {
+        border-top: solid 3px $black;
+      }
+      .main-content {
+        background-image: linear-gradient(to bottom, $white, $white-dark);
+        -webkit-box-shadow: 0px -8px 31px -14px rgba(0,0,0,0.1);
+        -moz-box-shadow: 0px -8px 31px -14px rgba(0,0,0,0.1);
+        box-shadow: 0px -8px 31px -14px rgba(0,0,0,0.1);
+        .content-oval {
+          background-image: linear-gradient(225deg, $blue-light, $blue);
+          border: 1px solid $white;
+          box-shadow: 0 0 0 2px $blue;
+        }
+      }
+    }
+  }
+  @media (max-width: 1500px) {
+    .content {
+      padding-bottom: 50px;
+    }
+  }
+  @media (max-width: 1250px) {
+    .content {
+      padding-bottom: 0px;
+    }
+  }
+}
+@media (max-width: $medium) {
+  .home-ways-to-learn {
+    min-height: 350px;
+  }
+}
+@media (max-width: $small) {
+  .home-ways-to-learn {
+    background: $white-dark;
+    min-height: 0;
+    height: 117px;
+    .container {
+      position: relative;
+      padding: 0px;
+      top: 0;
+      .content {
+        background: none;
+        border-radius: 0;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        .line {
+          top: 69px;
+        }
+        .title {
+          display: none;
+        }
+        .comment {
+          display: none;
+        }
+        .content-area {
+          padding: 0;
+          .content-item {
+            padding: 0;
+            .main-content {
+              padding-bottom: 0px;
+              width: 100%;
+            }
+            .pin {
+              display: none;
+            }
+          }
+          .content-icon {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+    .circuit-background {
+      display: none;
+    }
+  }
+}

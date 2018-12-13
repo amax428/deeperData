@@ -1,0 +1,59 @@
+@import 'shared/style/_variables';
+
+.header-page {
+  font-weight: 500;
+  border-bottom: solid 1px $grey-light;
+
+  a {
+    color: $grey;
+  }
+
+  .navbar-brand {
+    color: $grey;
+    display: flex;
+    align-items: center;
+  }
+  .brand-icon {
+    height: 28px;
+    margin-right: 8px;
+  }
+  .nav-item {
+    border-radius: 5px;
+    margin-left: 20px;
+    .nav-link {
+      padding: 5px 15px;
+    }
+  }
+  .nav-item:hover {
+    background: linear-gradient(to right, $orange-main, $orange-dark);
+    a {
+      color: $white !important;
+    }
+    .dropdown-item {
+      color: $black !important;;
+    }
+  }
+  .m-2 {
+    margin: 0px!important;
+  }
+}
+.navbar {
+  padding: 25px 15px;
+}
+@media (max-width: $small) {
+  .header-page {
+    padding: 0;
+    .navbar {
+      padding: 12px 0px;
+      .navbar-toggler {
+        font-size: 0.875rem;
+      }
+    }
+    .navbar-brand {
+      visibility: hidden;
+      .brand-icon {
+        visibility: visible;
+      }
+    }
+  }
+}

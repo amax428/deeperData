@@ -1,0 +1,142 @@
+@import "_variables";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+  color: $dark;
+  line-height: normal;
+}
+
+@media (min-width: $extra-large) {
+}
+.row {
+    margin: 0px;
+}
+.text-smallest {
+    font-size: 11px;
+}
+.text-smaller {
+    font-size: 13px;
+}
+.text-small {
+    font-size: 16px;
+}
+.text-medium {
+    font-size: 21px;
+}
+.text-normal {
+    font-size: 29px;
+}
+.text-big {
+    font-size: 36px;
+}
+.text-bigger {
+    font-size: 40px;
+}
+.text-biggest {
+    font-size: 65px;
+}
+.text-extra-big {
+    font-size: 76px;
+}
+@media (max-width: $larger) {
+    .text-biggest {
+        font-size: 60px;
+    }
+}
+@media (max-width: $large) {
+    .text-biggest {
+        font-size: 40px;
+    }
+    .text-small {
+        font-size: 14px;
+    }
+}
+@media (max-width: $small) {
+    .text-biggest {
+        font-size: 40px;
+    }
+    .text-small {
+        font-size: 12px;
+    }
+}
+@media (max-width: $large) {
+
+}
+@media (min-width: $large) {
+    .text-padding-for-col {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+.text-padding-extra-big {
+    padding-top: 224px;
+    padding-bottom: 224px;
+}
+@media (max-width: $large) {
+    .text-padding-extra-big {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+}
+@media (max-width: $small) {
+    .text-padding-extra-big {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+}
+.text-padding-big {
+    padding-top: 75px;
+    padding-bottom: 5px;
+}
+@media (max-width: $large) {
+    .text-padding-big {
+        padding-top: 65px;
+        padding-bottom: 65px;
+    }
+}
+@media (max-width: $medium) {
+    .text-padding-big {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+@media (max-width: $medium) {
+    .col-padding-top {
+        padding-top: 30px;
+    }
+}
+
+.text-column-align-center {
+    display: flex;
+    align-items: center;
+}
+.normal-button {
+    background: linear-gradient(to right, $orange-main, $orange-dark);
+    border: 0px;
+    margin-right: 10%;
+    color: $white;
+    padding: 20px 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.normal-button:hover {
+    opacity: 0.7;
+}
+.normal-image {
+    width: 100%;
+}
+@media (min-width: $larger) {
+    .normal-button {
+        min-width: 170px;
+    }
+}
+@media (max-width: $medium) {
+    .normal-image {
+        display: none;
+    }
+    .normal-button {
+        padding: 10px 9px;
+    }
+}

@@ -1,0 +1,42 @@
+@import 'shared/style/_variables';
+
+.home-page-banner {
+  .text-biggest {
+    font-weight: 900;
+    color: $black;
+  }
+  .text-small {
+    font-weight: 500;
+    color: $grey;
+  }
+  .normal-image {
+    padding-right: 15px;
+    max-height: 550px;
+    max-width: 570px;
+  }
+  .normal-button {
+    color: $white;
+    font-weight: 700;
+  }
+  @media (max-width: $medium) {
+    .normal-image {
+      display: flex;
+      max-height: 220px;
+      max-width: 230px;
+    }
+  }
+}
+@media (max-width: $medium) {
+  .home-page-banner {
+    background-position-y: 100%;
+    background-repeat: no-repeat;
+    min-height: 400px;
+    background-size: 50%;
+  }
+}
+@media (max-width: $medium) {
+  .col-padding-top {
+    display: flex;
+    justify-content: center;
+  }
+}
