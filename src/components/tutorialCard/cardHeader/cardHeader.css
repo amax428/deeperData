@@ -1,0 +1,47 @@
+.card__header {
+  height: 60%;
+  width: 100%;
+  position: relative; }
+  .card__header-img {
+    height: 80%;
+    width: 100%;
+    z-index: -10; }
+  .card__header--name {
+    position: absolute;
+    top: 64%;
+    right: -5%;
+    width: 105px;
+    height: 29px;
+    border-radius: 25px;
+    background-image: linear-gradient(to bottom, #ffc52d, #ff9314);
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.4px;
+    color: #ffffff;
+    text-align: left;
+    padding: 5px 10px; }
+  .card__header--photo {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+    top: 58%;
+    right: 2%; }
+  .card__header--title {
+    height: 20%;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    background-color: #19243b;
+    text-align: left;
+    padding: 10px 10px 20px 10px;
+    vertical-align: middle; }

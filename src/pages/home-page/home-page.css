@@ -1,0 +1,29 @@
+.homepage {
+  position: relative; }
+
+.man-image {
+  position: absolute;
+  object-fit: contain;
+  top: 64%;
+  left: 12.4%;
+  height: 430px;
+  width: 430px; }
+
+.man-image img {
+  height: 426px;
+  width: 174px; }
+
+.oval {
+  width: 161px;
+  height: 14px;
+  margin-left: -7px;
+  margin-top: -10px;
+  border-radius: 50%;
+  background-blend-mode: multiply;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.17));
+  z-index: -5; }
+
+@media (max-width: 1365px) {
+  .man-image {
+    height: 350px;
+    width: 350px; } }
