@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20">
+    <defs>
+        <linearGradient id="a" x1="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="#FFC837"/>
+            <stop offset="100%" stop-color="#FF8008"/>
+        </linearGradient>
+    </defs>
+    <text fill="url(#a)" fill-rule="evenodd" font-family="material" font-size="25" transform="translate(-978 -192)">
+        <tspan x="975" y="211"></tspan>
+    </text>
+</svg>

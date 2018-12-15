@@ -21,7 +21,7 @@ export default class Header extends Component {
                   <a href="/fundamentals" className="nav-link nav-active">Fundamentals</a>
                 </li>
                 <li className="nav-item">
-                  <a href="#" className="nav-link">Open&nbsp;Learning</a>
+                  <a href="/learning" className="nav-link">Open&nbsp;Learning</a>
                 </li>
                 <li className="nav-item dropdown">
                   <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
