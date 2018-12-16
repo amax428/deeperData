@@ -50,6 +50,9 @@
           line-height: normal;
           letter-spacing: 1.3px;
           color: #19243b; }
+          @media (max-width: 490px) {
+            .learning-page__section-1--title-1 span {
+              letter-spacing: initial; } }
         .learning-page__section-1--title-1-details {
           margin-top: 1%;
           width: 379px;
@@ -68,6 +71,9 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between; }
+        @media (max-width: 490px) {
+          .learning-page__section-1--title-2 {
+            display: none; } }
     .learning-page__section-1-path {
       margin-top: 3%;
       margin-bottom: 3%;
@@ -185,6 +191,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between; }
+        @media (max-width: 490px) {
+          .learning-page__section-1-wwd-overview {
+            flex-direction: column;
+            justify-content: initial; } }
         .learning-page__section-1-wwd-overview h3 {
           width: 350px; }
           @media (max-width: 576px) {
@@ -222,6 +232,9 @@
           width: 24px;
           height: 1px;
           background-color: #19243b; }
+        @media (max-width: 490px) {
+          .learning-page__section-1-wwd-partners img {
+            width: 60%; } }
     .learning-page__section-1-taught-by {
       display: flex;
       flex-direction: row;
@@ -229,6 +242,9 @@
       .learning-page__section-1-taught-by h3 {
         width: 250px;
         margin-right: 20px; }
+        @media (max-width: 490px) {
+          .learning-page__section-1-taught-by h3 {
+            margin-right: 0; } }
       .learning-page__section-1-taught-by-dd {
         display: flex;
         flex-direction: column;
@@ -241,13 +257,27 @@
         color: #808ba5; }
     .learning-page__section-1-location {
       display: flex;
-      flex-direction: row; }
+      flex-direction: row;
+      justify-content: space-between; }
       .learning-page__section-1-location h3 {
         width: 170px;
         margin-right: 20px; }
       .learning-page__section-1-location img {
         width: 470px;
-        height: 107px; }
+        height: 107px;
+        margin-right: 10%; }
+        @media (max-width: 1200px) {
+          .learning-page__section-1-location img {
+            margin-right: 22%; } }
+        @media (max-width: 991px) {
+          .learning-page__section-1-location img {
+            margin-right: 4%; } }
+        @media (max-width: 768px) {
+          .learning-page__section-1-location img {
+            margin-right: 1%; } }
+        @media (max-width: 576px) {
+          .learning-page__section-1-location img {
+            width: 70%; } }
     .learning-page__section-1-levels {
       display: flex;
       flex-direction: row; }
@@ -257,11 +287,26 @@
         justify-content: space-between;
         margin-right: 40px;
         margin-bottom: 7px; }
+        @media (max-width: 490px) {
+          .learning-page__section-1-levels-headings {
+            margin-right: 20px; } }
         .learning-page__section-1-levels-headings :first-child {
           margin-bottom: 20px; }
       .learning-page__section-1-levels-pg {
         display: flex;
         flex-direction: column; }
+        @media (max-width: 1200px) {
+          .learning-page__section-1-levels-pg {
+            margin-left: 5%; } }
+        @media (max-width: 991px) {
+          .learning-page__section-1-levels-pg {
+            margin-left: 2%; } }
+        @media (max-width: 768px) {
+          .learning-page__section-1-levels-pg {
+            margin-left: -2%; } }
+        @media (max-width: 576px) {
+          .learning-page__section-1-levels-pg {
+            margin-left: 0; } }
         .learning-page__section-1-levels-pg div {
           font-weight: normal;
           font-style: normal;
@@ -293,6 +338,9 @@
           width: 180px; }
           .learning-page__section-1-ltinerary-route-date img {
             margin-top: 33%; }
+          @media (max-width: 490px) {
+            .learning-page__section-1-ltinerary-route-date {
+              margin-right: 5px; } }
           .learning-page__section-1-ltinerary-route-date div {
             font-weight: normal;
             font-style: normal;
@@ -629,6 +677,8 @@
       line-height: normal;
       letter-spacing: 0.4px;
       color: #ffffff; }
+    .footer-for-small-screen .footer-nav svg {
+      fill: white; }
   .footer-for-small-screen .footer-line {
     width: 107%;
     height: 1px;
@@ -638,10 +688,4 @@
     background-color: white; }
     @media (max-width: 576px) {
       .footer-for-small-screen .footer-line {
-        width: 100%; } }
-
-.footer-icon {
-  width: 20px;
-  height: 20px;
-  background-color: white;
-  color: white; }
+        width: 107%; } }

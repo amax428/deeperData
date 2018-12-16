@@ -299,22 +299,22 @@ export default class LearningPage extends Component{
                         <div className="footer-line"></div>
                         <div className="footer-nav">
                             <div className="text-small">Company</div>
-                            <div><i className="icon ion-ios-arrow footer-icon"></i></div>
+                            <div><SvgComponent name="arrow-down"/></div>
                         </div>
                         <div className="footer-line"></div>
                         <div className="footer-nav">
                             <div className="text-small">Resources</div>
-                            <div><i className="icon ion-ios-arrow text-small"></i></div>
+                            <div><SvgComponent name="arrow-down"/></div>
                         </div>
                         <div className="footer-line"></div>
                         <div className="footer-nav">
                             <div className="text-small">Terms</div>
-                            <div><i className="icon ion-ios-arrow text-small"></i></div>
+                            <div><SvgComponent name="arrow-down"/></div>
                         </div>
                         <div className="footer-line"></div>
                         <div className="footer-nav">
-                            <div className="footer-nav-icon"><i className="icon ion-logo-facebook text-normal"></i></div>
-                            <div className="footer-nav-icon"><i className="icon ion-logo-twitter text-normal"></i></div>
+                            <div className="footer-nav-icon"><i className="icon ion-logo-facebook text-normal" ></i></div>
+                            <div className="footer-nav-icon"><i className="icon ion-logo-twitter text-normal "></i></div>
                             <div className="footer-nav-icon"><i className="icon ion-logo-linkedin text-normal"></i></div>
                         </div>
                     </div>
