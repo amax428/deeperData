@@ -26,9 +26,6 @@
   display: flex;
   flex-direction: row;
 
-
-
-
   &__section-1{
     display: flex;
     flex-direction: column;
@@ -116,7 +113,6 @@
       }
 
     }
-
     &-wwd{
       display: flex;
       flex-direction: column;
@@ -127,36 +123,11 @@
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 4%;
-
-        &-btn{
-          width: 137px;
-          height: 30px;
-          object-fit: contain;
-          border-radius: 4px;
-          background-image: linear-gradient(102deg, #ffc837, #ff8008);
-          text-align: center;
-          vertical-align: middle;
-          padding: 5px 10px;
-
-          span{
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: 0.6px;
-            color: #ffffff;
-          }
-        }
-
-
-
-
         &-points{
           display: flex;
           flex-direction: row;
           justify-content: space-between;
-
-
+          letter-spacing: normal;
           &-1{
             display: flex;
             flex-direction: column;
@@ -182,9 +153,6 @@
             @media (max-width: $small) {
               margin-bottom: 0px;
             }
-
-
-
             i{
               width: 20px;
               height: 20px;
@@ -196,14 +164,12 @@
               letter-spacing: normal;
               color: #808ba5;
             }
-
             span{
               margin-left: 10px;
               font-weight: normal;
               font-style: normal;
               font-stretch: normal;
               line-height: normal;
-              letter-spacing: 0.6px;
               color: #808ba5;
 
               @media (max-width: $small) {
@@ -244,13 +210,12 @@
 
         &-details{
           outline: none;
-          border: 1px solid #979797;
-          border-radius: 4px;
+          border: 2px solid #979797;
           padding: 5px 10px;
           text-align: center;
           vertical-align: middle;
           background-color: transparent;
-
+          cursor: pointer;
           span{
             font-weight: 500;
             font-style: normal;
@@ -487,12 +452,19 @@
           justify-content: center;
 
           margin-right: 50px;
+          @media (max-width: $small) {
+            margin-right: 20px;
+          }
         }
 
         &-date{
-          width: 180px;
-          img{
-            margin-top: 33%;
+          .lower-part {
+            display: flex;
+            margin-top: 50px;
+            img{
+              width: 164px;
+              height: 110px;
+            }
           }
 
           @media (max-width: $very-small) {
@@ -519,15 +491,17 @@
           line-height: normal;
           letter-spacing: 0.6px;
           color: #808ba5;
-
+          margin-left: 65px;
           a{
             color: #ff8008;
             letter-spacing: 0.57px;
-            font-family: Roboto-Meduim;
-            font-weight: 400;
+            font-weight: 600;
           }
-
+          @media (max-width: $small) {
+            margin-left: 25px;
+          }
         }
+
       }
     }
 
@@ -541,16 +515,16 @@
       &-1{
         display: flex;
         flex-direction: row;
-
+        align-items: center;
+        margin-bottom: 10px;
         h3{
           margin-right: 10px;
+          margin-bottom: 0px;
         }
 
         div{
           margin-right: auto;
           svg{
-            width: 20px !important;
-            height: 20px !important;
             padding-bottom: 2px;
           }
         }
@@ -637,7 +611,6 @@
           margin-top: 1.5%;
           i{
             width: 25px;
-            height: 25px;
             font-family: material;
             font-weight: normal;
             font-style: normal;
@@ -660,34 +633,25 @@
           letter-spacing: 0.8px;
           color: #808ba5;
         }
-
-        &-btn{
-          width: 101px;
-          height: 39px;
-          object-fit: contain;
-          border-radius: 5px;
-          background-image: linear-gradient(249deg, #00aeef, #1b75bc);
-          text-align: center;
-          padding-top: 5px;
-
-          span{
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: 0.8px;
-            color: #ffffff;
-          }
-        }
-
-
       }
     }
   }
-
-
-
-
+  .normal-button {
+    height: fit-content;
+    text-align: center;
+    padding: 5px 17px;
+    min-width: 0px;
+    margin: 0px;
+  }
+  .normal-button.text-small {
+    font-weight: 700;
+    color: #ffffff;
+  }
+  .normal-button.text-medium {
+    font-weight: 700;
+    color: #ffffff;
+    background-image: linear-gradient(249deg, #00aeef, #1b75bc);
+  }
 }
 
 .heading-tertiary{
@@ -724,7 +688,7 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
+      align-items: center;
       h1{
         font-weight: 900;
         font-style: normal;
@@ -750,17 +714,22 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
+        width: -webkit-fill-available;
         &-logo{
-
           &-item{
             img{
               width: 28px;
               height: 28px;
               margin-right: 10px;
             }
+            color: $white;
+            display: flex;
+            align-items: center;
           }
-
+          &-item:hover {
+            color: $grey;
+            text-decoration: none;
+          }
         }
 
         &-menu{
@@ -770,7 +739,7 @@
             flex-direction: column;
             justify-content: space-around;
 
-            div{
+            a {
               font-weight: 500;
               font-style: normal;
               font-stretch: normal;
@@ -778,6 +747,11 @@
               letter-spacing: 0.6px;
               color: #ffffff;
               margin-bottom: 10px;
+              cursor: pointer;
+            }
+            a:hover {
+              color: $grey;
+              text-decoration: none;
             }
           }
 
@@ -785,7 +759,7 @@
             display: flex;
             flex-direction: column;
 
-            div{
+            a {
               font-weight: 500;
               font-style: normal;
               font-stretch: normal;
@@ -793,6 +767,11 @@
               letter-spacing: 0.6px;
               color: #ffffff;
               margin-bottom: 10px;
+              cursor: pointer;
+            }
+            a:hover {
+              color: $grey;
+              text-decoration: none;
             }
           }
         }
@@ -809,16 +788,18 @@
         border-radius: 46.5px;
         background-color: #ffffff;
         padding: 10px 20px;
-
+        cursor: pointer;
+        color: #19243b;
         span{
           font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: normal;
           letter-spacing: 1.4px;
-          color: #19243b;
         }
-
+      }
+      &-btn:hover {
+        opacity: 0.5;
       }
     }
     &-social{
@@ -852,8 +833,12 @@
   border-radius: 50%;
   text-align: center;
   margin-top: 10px;
-  padding-top: 12px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .social-icons {
+    height: 25px;
+  }
 
   &-facebook{
     background-image: linear-gradient(135deg, #ffc837, #ff8008);
@@ -901,12 +886,7 @@
   }
 }
 
-.min-stars{
-  svg{
-    width: 15px;
-    height: 16px;
-  }
-}
+
 
 .margin-bit-to-right{
   margin-right: 3px;
@@ -926,7 +906,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
+    align-items: center;
     input{
       margin-right: auto;
     }
@@ -971,9 +951,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
-
-    div{
+    align-items: center;
+    color: $white;
+    cursor: pointer;
+    .social-icons {
+      height: 15px;
+    }
+    @media (max-width: $small) {
+      .social-icons {
+        height: 10px;
+      }
+    }
+    a {
       font-weight: bold;
       font-style: normal;
       font-stretch: normal;
@@ -985,9 +974,12 @@
     svg{
       fill: white;
     }
+
+    &:last-child {
+      cursor: initial;
+      padding: 5px 0px 10px;
+    }
   }
-
-
   .footer-line{
     width: 107%;
     height: 1px;
@@ -1000,11 +992,26 @@
       width: 107%;
     }
   }
-
+  @media (max-width: $small) {
+    .text-biggest {
+      font-size: 20px;
+    }
+    .text-big {
+      font-size: 10px;
+      width: fit-content;
+      padding: 5px 10px;
+      font-weight: 700;
+    }
+  }
 
 }
 
-
+.min-stars{
+  svg{
+    width: 15px;
+    height: 16px;
+  }
+}
 
 
 

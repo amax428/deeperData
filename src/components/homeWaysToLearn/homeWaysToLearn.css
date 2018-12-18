@@ -1,7 +1,8 @@
 .home-ways-to-learn {
   width: 100%;
-  height: 50vw;
+  height: 40vw;
   min-height: 430px;
+  max-height: 670px;
   background: linear-gradient(to right, #1b75bc, #00aeef);
   position: relative; }
   .home-ways-to-learn .circuit-background {
@@ -36,7 +37,8 @@
     padding-bottom: 145px;
     text-align: center;
     border-radius: 5px;
-    box-shadow: 1px 5px 25px 0 rgba(0, 0, 0, 0.15); }
+    box-shadow: 1px 5px 25px 0 rgba(0, 0, 0, 0.15);
+    position: relative; }
     .home-ways-to-learn .content .text-big {
       font-weight: 700;
       color: #19243b; }
@@ -111,6 +113,24 @@
           background-image: linear-gradient(225deg, #00aeef, #1b75bc);
           border: 1px solid #ffffff;
           box-shadow: 0 0 0 2px #1b75bc; }
+  .home-ways-to-learn .man-image {
+    position: absolute;
+    object-fit: contain;
+    width: 8vw;
+    top: 30%;
+    left: calc(-8vw + 30px); }
+    .home-ways-to-learn .man-image img {
+      width: 100%; }
+  .home-ways-to-learn .oval {
+    width: 7vw;
+    height: 14px;
+    margin-left: -7px;
+    margin-top: -10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-blend-mode: multiply;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.16), rgba(0, 0, 0, 0.17));
+    z-index: -5; }
   @media (max-width: 1500px) {
     .home-ways-to-learn .content {
       padding-bottom: 50px; } }
@@ -156,4 +176,6 @@
             width: 30px;
             height: 30px; }
     .home-ways-to-learn .circuit-background {
-      display: none; } }
+      display: none; }
+  .man-image {
+    display: none; } }

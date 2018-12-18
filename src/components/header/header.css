@@ -14,7 +14,8 @@
     border-radius: 5px;
     margin-left: 20px; }
     .header-page .nav-item .nav-link {
-      padding: 5px 15px; }
+      padding: 5px 15px;
+      color: #808ba5; }
   .header-page .nav-item:hover {
     background: linear-gradient(to right, #ffc837, #ff8008); }
     .header-page .nav-item:hover a {
@@ -23,6 +24,10 @@
       color: #19243b !important; }
   .header-page .m-2 {
     margin: 0px !important; }
+  .header-page .icon-area {
+    display: flex; }
+    .header-page .icon-area .extra-icon {
+      margin-left: 20px; }
 
 .navbar {
   padding: 25px 15px; }

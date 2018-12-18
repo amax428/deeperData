@@ -93,26 +93,11 @@
         flex-direction: row;
         justify-content: space-between;
         margin-bottom: 4%; }
-        .learning-page__section-1-wwd-details-btn {
-          width: 137px;
-          height: 30px;
-          object-fit: contain;
-          border-radius: 4px;
-          background-image: linear-gradient(102deg, #ffc837, #ff8008);
-          text-align: center;
-          vertical-align: middle;
-          padding: 5px 10px; }
-          .learning-page__section-1-wwd-details-btn span {
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: 0.6px;
-            color: #ffffff; }
         .learning-page__section-1-wwd-details-points {
           display: flex;
           flex-direction: row;
-          justify-content: space-between; }
+          justify-content: space-between;
+          letter-spacing: normal; }
           .learning-page__section-1-wwd-details-points-1 {
             display: flex;
             flex-direction: column;
@@ -149,7 +134,6 @@
               font-style: normal;
               font-stretch: normal;
               line-height: normal;
-              letter-spacing: 0.6px;
               color: #808ba5; }
               @media (max-width: 576px) {
                 .learning-page__section-1-wwd-details-points-el span {
@@ -173,12 +157,12 @@
             font-weight: 900; }
         .learning-page__section-1-wwd-time-details {
           outline: none;
-          border: 1px solid #979797;
-          border-radius: 4px;
+          border: 2px solid #979797;
           padding: 5px 10px;
           text-align: center;
           vertical-align: middle;
-          background-color: transparent; }
+          background-color: transparent;
+          cursor: pointer; }
           .learning-page__section-1-wwd-time-details span {
             font-weight: 500;
             font-style: normal;
@@ -334,20 +318,25 @@
           flex-direction: column;
           justify-content: center;
           margin-right: 50px; }
-        .learning-page__section-1-ltinerary-route-date {
-          width: 180px; }
-          .learning-page__section-1-ltinerary-route-date img {
-            margin-top: 33%; }
-          @media (max-width: 490px) {
-            .learning-page__section-1-ltinerary-route-date {
-              margin-right: 5px; } }
-          .learning-page__section-1-ltinerary-route-date div {
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: 0.6px;
-            color: #808ba5; }
+          @media (max-width: 576px) {
+            .learning-page__section-1-ltinerary-route-shape {
+              margin-right: 20px; } }
+        .learning-page__section-1-ltinerary-route-date .lower-part {
+          display: flex;
+          margin-top: 50px; }
+          .learning-page__section-1-ltinerary-route-date .lower-part img {
+            width: 164px;
+            height: 110px; }
+        @media (max-width: 490px) {
+          .learning-page__section-1-ltinerary-route-date {
+            margin-right: 5px; } }
+        .learning-page__section-1-ltinerary-route-date div {
+          font-weight: normal;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: normal;
+          letter-spacing: 0.6px;
+          color: #808ba5; }
         .learning-page__section-1-ltinerary-route-time {
           margin-top: auto;
           margin-bottom: auto;
@@ -356,26 +345,30 @@
           font-stretch: normal;
           line-height: normal;
           letter-spacing: 0.6px;
-          color: #808ba5; }
+          color: #808ba5;
+          margin-left: 65px; }
           .learning-page__section-1-ltinerary-route-time a {
             color: #ff8008;
             letter-spacing: 0.57px;
-            font-family: Roboto-Meduim;
-            font-weight: 400; }
+            font-weight: 600; }
+          @media (max-width: 576px) {
+            .learning-page__section-1-ltinerary-route-time {
+              margin-left: 25px; } }
     .learning-page__section-1-review {
       display: flex;
       flex-direction: column;
       justify-content: center; }
       .learning-page__section-1-review-1 {
         display: flex;
-        flex-direction: row; }
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 10px; }
         .learning-page__section-1-review-1 h3 {
-          margin-right: 10px; }
+          margin-right: 10px;
+          margin-bottom: 0px; }
         .learning-page__section-1-review-1 div {
           margin-right: auto; }
           .learning-page__section-1-review-1 div svg {
-            width: 20px !important;
-            height: 20px !important;
             padding-bottom: 2px; }
       .learning-page__section-1-review-2 {
         font-weight: 500;
@@ -439,7 +432,6 @@
           margin-top: 1.5%; }
           .learning-page__section-2-subscribe-email-icon i {
             width: 25px;
-            height: 25px;
             font-family: material;
             font-weight: normal;
             font-style: normal;
@@ -458,21 +450,19 @@
           line-height: normal;
           letter-spacing: 0.8px;
           color: #808ba5; }
-        .learning-page__section-2-subscribe-email-btn {
-          width: 101px;
-          height: 39px;
-          object-fit: contain;
-          border-radius: 5px;
-          background-image: linear-gradient(249deg, #00aeef, #1b75bc);
-          text-align: center;
-          padding-top: 5px; }
-          .learning-page__section-2-subscribe-email-btn span {
-            font-weight: bold;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: normal;
-            letter-spacing: 0.8px;
-            color: #ffffff; }
+  .learning-page .normal-button {
+    height: fit-content;
+    text-align: center;
+    padding: 5px 17px;
+    min-width: 0px;
+    margin: 0px; }
+  .learning-page .normal-button.text-small {
+    font-weight: 700;
+    color: #ffffff; }
+  .learning-page .normal-button.text-medium {
+    font-weight: 700;
+    color: #ffffff;
+    background-image: linear-gradient(249deg, #00aeef, #1b75bc); }
 
 .heading-tertiary {
   font-weight: bold;
@@ -501,7 +491,8 @@
     .footer-div-start {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; }
+      justify-content: space-between;
+      align-items: center; }
       .footer-div-start h1 {
         font-weight: 900;
         font-style: normal;
@@ -521,34 +512,50 @@
       .footer-div-start-link {
         display: flex;
         flex-direction: row;
-        justify-content: space-between; }
-        .footer-div-start-link-logo-item img {
-          width: 28px;
-          height: 28px;
-          margin-right: 10px; }
+        justify-content: space-between;
+        width: -webkit-fill-available; }
+        .footer-div-start-link-logo-item {
+          color: #ffffff;
+          display: flex;
+          align-items: center; }
+          .footer-div-start-link-logo-item img {
+            width: 28px;
+            height: 28px;
+            margin-right: 10px; }
+        .footer-div-start-link-logo-item:hover {
+          color: #808ba5;
+          text-decoration: none; }
         .footer-div-start-link-menu-1 {
           display: flex;
           flex-direction: column;
           justify-content: space-around; }
-          .footer-div-start-link-menu-1 div {
+          .footer-div-start-link-menu-1 a {
             font-weight: 500;
             font-style: normal;
             font-stretch: normal;
             line-height: normal;
             letter-spacing: 0.6px;
             color: #ffffff;
-            margin-bottom: 10px; }
+            margin-bottom: 10px;
+            cursor: pointer; }
+          .footer-div-start-link-menu-1 a:hover {
+            color: #808ba5;
+            text-decoration: none; }
         .footer-div-start-link-menu-2 {
           display: flex;
           flex-direction: column; }
-          .footer-div-start-link-menu-2 div {
+          .footer-div-start-link-menu-2 a {
             font-weight: 500;
             font-style: normal;
             font-stretch: normal;
             line-height: normal;
             letter-spacing: 0.6px;
             color: #ffffff;
-            margin-bottom: 10px; }
+            margin-bottom: 10px;
+            cursor: pointer; }
+          .footer-div-start-link-menu-2 a:hover {
+            color: #808ba5;
+            text-decoration: none; }
     .footer-div-links {
       display: flex;
       flex-direction: column;
@@ -556,14 +563,17 @@
       .footer-div-links-btn {
         border-radius: 46.5px;
         background-color: #ffffff;
-        padding: 10px 20px; }
+        padding: 10px 20px;
+        cursor: pointer;
+        color: #19243b; }
         .footer-div-links-btn span {
           font-weight: bold;
           font-style: normal;
           font-stretch: normal;
           line-height: normal;
-          letter-spacing: 1.4px;
-          color: #19243b; }
+          letter-spacing: 1.4px; }
+      .footer-div-links-btn:hover {
+        opacity: 0.5; }
     .footer-div-social {
       display: flex;
       flex-direction: column;
@@ -587,7 +597,11 @@
   border-radius: 50%;
   text-align: center;
   margin-top: 10px;
-  padding-top: 12px; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .social-icon .social-icons {
+    height: 25px; }
   .social-icon-facebook {
     background-image: linear-gradient(135deg, #ffc837, #ff8008); }
     .social-icon-facebook i {
@@ -624,10 +638,6 @@
       letter-spacing: normal;
       color: #ffffff; }
 
-.min-stars svg {
-  width: 15px;
-  height: 16px; }
-
 .margin-bit-to-right {
   margin-right: 3px; }
 
@@ -641,7 +651,8 @@
   .for-smaller-screen .learning-page__section-2-subscribe-email {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center; }
     .for-smaller-screen .learning-page__section-2-subscribe-email input {
       margin-right: auto; }
     .for-smaller-screen .learning-page__section-2-subscribe-email .learning-page__section-2-subscribe-email-icon {
@@ -669,8 +680,16 @@
   .footer-for-small-screen .footer-nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
-    .footer-for-small-screen .footer-nav div {
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer; }
+    .footer-for-small-screen .footer-nav .social-icons {
+      height: 15px; }
+    @media (max-width: 576px) {
+      .footer-for-small-screen .footer-nav .social-icons {
+        height: 10px; } }
+    .footer-for-small-screen .footer-nav a {
       font-weight: bold;
       font-style: normal;
       font-stretch: normal;
@@ -679,6 +698,9 @@
       color: #ffffff; }
     .footer-for-small-screen .footer-nav svg {
       fill: white; }
+    .footer-for-small-screen .footer-nav:last-child {
+      cursor: initial;
+      padding: 5px 0px 10px; }
   .footer-for-small-screen .footer-line {
     width: 107%;
     height: 1px;
@@ -689,3 +711,15 @@
     @media (max-width: 576px) {
       .footer-for-small-screen .footer-line {
         width: 107%; } }
+  @media (max-width: 576px) {
+    .footer-for-small-screen .text-biggest {
+      font-size: 20px; }
+    .footer-for-small-screen .text-big {
+      font-size: 10px;
+      width: fit-content;
+      padding: 5px 10px;
+      font-weight: 700; } }
+
+.min-stars svg {
+  width: 15px;
+  height: 16px; }

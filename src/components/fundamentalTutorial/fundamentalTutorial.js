@@ -4,7 +4,7 @@ import fundamentalIcon from '../../assets/fundamentals.png';
 import learningIcon from '../../assets/learning.png';
 import trainingIcon from '../../assets/training.png';
 import trailPhoto from '../../assets/social.jpg';
-import teacherPhoto from '../../assets/offer.jpg';
+import teacherPhoto from '../../assets/avatar.jpg';
 import './fundamentalTutorial.css';
 
 export default class FundamentalTutorial extends Component {
@@ -70,7 +70,7 @@ export default class FundamentalTutorial extends Component {
     };
     render() {
         return (
-            <div className="home-ways-to-learn">
+            <div className="fundamental-tutorial">
                 <div className="circuit-background">
                     <div className="circuit-background-left col-md-6" />
                     <div className="circuit-background-right col-md-6" />

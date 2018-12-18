@@ -4,15 +4,14 @@ import SvgComponent from "../../shared/style/svgComponents/svgComponent";
 import partnersImg from '../../assets/partners.PNG';
 import locationMap from '../../assets/location.png';
 import saveMaterial from '../../assets/save-material.png';
-import saveMaterial2x from '../../assets/save-material@2x.png';
-import saveMaterial3x from '../../assets/save-material@3x.png';
 import shareIcon from '../../assets/share-alt-square-font-awesome.png';
-import shareIcon2x from '../../assets/share-alt-square-font-awesome@2x.png';
-import shareIcon3x from '../../assets/share-alt-square-font-awesome@3x.png';
 import deeperData from '../../assets/deepData.png';
 import brandIcon from '../../assets/brand.png';
 import man from '../../assets/man.png';
 import line from '../../assets/line.PNG';
+import facebookIcon from '../../assets/facebook.png';
+import twitterIcon from '../../assets/twitter.png';
+import linkedInIcon from '../../assets/linkedin.png';
 
 export default class LearningPage extends Component{
     state = {
@@ -27,6 +26,15 @@ export default class LearningPage extends Component{
             }
         }
     };
+
+    // componentDidMount() {
+    //     this.props.changeLoggedin(true);
+    // }
+
+    // componentWillUnmount() {
+    //     this.props.changeLoggedin(false);
+    // }
+    
     render(){
         this.starsHandler();
         return(
@@ -43,17 +51,17 @@ export default class LearningPage extends Component{
                             </div>
                             <div className="learning-page__section-1--title-2">
                                 <a href="/" className="learning-page__section-1--title-btn">
-                                    <img src={saveMaterial} srcSet={`${saveMaterial2x} 2x,${saveMaterial3x} 3x`}/>
+                                    <img src={saveMaterial}/>
                                 </a>
                                 <a href="/" className="learning-page__section-1--title-btn">
-                                    <img src={shareIcon} srcSet={`${shareIcon2x} 2x,${shareIcon3x} 3x`}/>
+                                    <img src={shareIcon}/>
                                 </a>
                             </div>
                         </div>
                         <div className="learning-page__section-1-path"></div>
                         <div className="learning-page__section-1-wwd">
                             <div className="learning-page__section-1-wwd-details">
-                                <div className="learning-page__section-1-wwd-details-btn"><span className="text-small">What we’ll do</span></div>
+                                <div className="normal-button text-small">What we’ll do</div>
                                 <div className="learning-page__section-1-wwd-details-points">
                                     <div className="learning-page__section-1-wwd-details-points-1">
                                         <div className="learning-page__section-1-wwd-details-points-el margin-bit-to-right">
@@ -100,11 +108,11 @@ export default class LearningPage extends Component{
                                         <div className="text-small">
                                             $100 per person
                                         </div>
-                                        <div className="min-stars">
+                                        <div className="min-stars text-small">
                                             {this.state.stars} (12 Reviews)
                                         </div>
                                     </div>
-                                    <div className="learning-page__section-1-wwd-details-btn"><span>What we’ll do</span></div>
+                                    <div className="normal-button text-small">What we’ll do</div>
                                 </div>
                                 <div className="learning-page__section-1-path"></div>
                                 <div className="learning-page__section-2-subscribe ">
@@ -116,7 +124,7 @@ export default class LearningPage extends Component{
                                     <div className="learning-page__section-2-subscribe-email">
                                         <div className="learning-page__section-2-subscribe-email-icon"><i className="icon ion-md-mail text-normal"></i></div>
                                         <input type="text" placeholder="Email" className="text-small"/>
-                                        <a className="learning-page__section-2-subscribe-email-btn"><span className="text-medium">Submit</span></a>
+                                        <a className="normal-button text-medium">Submit</a>
                                     </div>
                                 </div>
                                 <div className="learning-page__section-1-path"></div>
@@ -187,16 +195,18 @@ export default class LearningPage extends Component{
                                 </div>
                                 <div className="learning-page__section-1-ltinerary-route-date">
                                     <div className="text-small">Sunday, 22 November</div>
-                                    <img src={deeperData}/>
-                                </div>
-                                <div className="learning-page__section-1-ltinerary-route-time text-small">
-                                    <h3 className="heading-tertiary text-small">Meet up</h3>
-                                    <div>
-                                        <div>2:30 PM - 5:30 PM . In-person Session<br/><br/>
-                                            Every open lab has on agenda 3 core activities:<br/><br/>
-                                            1. Global Projects - Specially designed projects
-                                            by The Blockchain<br/><br/></div>
-                                        <a href="#" className="text-small">See Details</a>
+                                    <div className="lower-part">
+                                        <img src={deeperData}/>
+                                        <div className="learning-page__section-1-ltinerary-route-time text-small">
+                                            <h3 className="heading-tertiary text-small">Meet up</h3>
+                                            <div>
+                                                <div>2:30 PM - 5:30 PM . In-person Session<br/><br/>
+                                                    Every open lab has on agenda 3 core activities:<br/><br/>
+                                                    1. Global Projects - Specially designed projects
+                                                    by The Blockchain<br/><br/></div>
+                                                <a href="#" className="text-small">See Details</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -205,7 +215,7 @@ export default class LearningPage extends Component{
                         <div className="learning-page__section-1-review">
                             <div className="learning-page__section-1-review-1">
                                 <h3 className="heading-tertiary text-small">Reviews (15)</h3>
-                                <div>{this.state.stars}</div>
+                                <div className="min-stars text-small">{this.state.stars}</div>
                             </div>
                             <div className="learning-page__section-1-review-2 text-small">
                                 Start by giving stars to this workshop.
@@ -230,7 +240,7 @@ export default class LearningPage extends Component{
                                     {this.state.stars} (12 Reviews)
                                 </div>
                             </div>
-                            <div className="learning-page__section-1-wwd-details-btn"><span>What we’ll do</span></div>
+                            <div className="normal-button text-small">What we’ll do</div>
                         </div>
                         <div className="learning-page__section-1-path"></div>
                         <div className="learning-page__section-2-subscribe ">
@@ -242,7 +252,7 @@ export default class LearningPage extends Component{
                             <div className="learning-page__section-2-subscribe-email">
                                 <div className="learning-page__section-2-subscribe-email-icon"><i className="icon ion-md-mail text-normal"></i></div>
                                 <input type="text" placeholder="Email" className="text-small"/>
-                                <a className="learning-page__section-2-subscribe-email-btn"><span className="text-medium">Submit</span></a>
+                                <a className="normal-button text-medium">Submit</a>
                             </div>
                         </div>
                     </div>
@@ -261,15 +271,15 @@ export default class LearningPage extends Component{
                                     </a>
                                 </div>
                                 <div className="footer-div-start-link-menu-1">
-                                    <div className="text-small">Explore All Features</div>
-                                    <div className="text-small">Pricing</div>
-                                    <div className="text-small">Company</div>
-                                    <div className="text-small">Log In</div>
+                                    <a className="text-small" href="/">Explore All Features</a>
+                                    <a className="text-small" href="/">Pricing</a>
+                                    <a className="text-small" href="/">Company</a>
+                                    <a className="text-small" href="/">Log In</a>
                                 </div>
                                 <div className="footer-div-start-link-menu-2">
-                                    <div className="text-small">Privacy Policy</div>
-                                    <div className="text-small">Terms Of Use</div>
-                                    <div className="text-small">Contact Us</div>
+                                    <a className="text-small" href="/">Privacy Policy</a>
+                                    <a className="text-small" href="/">Terms Of Use</a>
+                                    <a className="text-small" href="/">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -278,9 +288,9 @@ export default class LearningPage extends Component{
                             <div className="footer-div-social">
                                 <div className="footer-div-social-text text-bigger">Social</div>
                                 <div className="footer-div-social-icons">
-                                    <div className="social-icon social-icon-facebook"><i className="icon ion-logo-facebook text-normal"></i></div>
-                                    <div className="social-icon social-icon-twitter"><i className="icon ion-logo-twitter text-normal"></i></div>
-                                    <div className="social-icon social-icon-linkdin"><i className="icon ion-logo-linkedin text-normal"></i></div>
+                                    <a className="social-icon social-icon-facebook" href="http://www.facebook.com"><img className="social-icons" src={facebookIcon}></img></a>
+                                    <a className="social-icon social-icon-twitter" href="http://www.facebook.com"><img className="social-icons" src={twitterIcon}></img></a>
+                                    <a className="social-icon social-icon-linkdin" href="http://www.facebook.com"><img className="social-icons" src={linkedInIcon}></img></a>
                                 </div>
                             </div>
                         </div>
@@ -290,7 +300,7 @@ export default class LearningPage extends Component{
                 <div className="footer-for-small-screen">
                     <div className="footer-div-start">
                         <h1 className="text-biggest">Get Starts Today</h1>
-                        <button className="footer-div-links-btn"><span className="text-big">Get Started</span></button>
+                        <button className="footer-div-links-btn text-big">Get Started</button>
                     </div>
                     <div className="footer-div-navigation">
                         <a className="footer-div-start-link-logo-item" href="/">
@@ -313,9 +323,9 @@ export default class LearningPage extends Component{
                         </div>
                         <div className="footer-line"></div>
                         <div className="footer-nav">
-                            <div className="footer-nav-icon"><i className="icon ion-logo-facebook text-normal" ></i></div>
-                            <div className="footer-nav-icon"><i className="icon ion-logo-twitter text-normal "></i></div>
-                            <div className="footer-nav-icon"><i className="icon ion-logo-linkedin text-normal"></i></div>
+                            <a className="footer-nav-icon" href="http://www.facebook.com"><img className="social-icons" src={facebookIcon}></img></a>
+                            <a className="footer-nav-icon" href="http://www.twitter.com"><img className="social-icons" src={twitterIcon}></img></a>
+                            <a className="footer-nav-icon" href="http://www.linkedin.com"><img className="social-icons" src={linkedInIcon}></img></a>
                         </div>
                     </div>
                 </div>

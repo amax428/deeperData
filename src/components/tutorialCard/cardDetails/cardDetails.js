@@ -26,19 +26,19 @@ export class CardDetails extends React.Component {
                     <div className="card__details--review-stars">
                         {this.state.stars}
                     </div>
-                    <div className="card__details--review-members">
+                    <div className="card__details--review-members text-smallest">
                         <i className="fas fa-user"></i>
                         <span>{this.props.member}</span>
                     </div>
-                    <div className="card__details--review-comments">
+                    <div className="card__details--review-comments text-smallest">
                         <i className="fas fa-comments"></i>
                         <span>{this.props.comments}</span>
                     </div>
                 </div>
-                <div className="card__details--text">
+                <div className="card__details--text text-smaller">
                     Just replace your text. Just replace your text.
                 </div>
-                <a className="card__details--btn"><span>Learn Now</span></a>
+                <a className="card__details--btn text-smaller normal-button"><span>Learn Now</span></a>
             </div>
         )
     }

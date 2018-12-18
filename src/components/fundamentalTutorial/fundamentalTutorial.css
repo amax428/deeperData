@@ -1,22 +1,22 @@
-.home-ways-to-learn {
+.fundamental-tutorial {
   width: 100%;
-  height: 50vw;
+  height: 1100px;
   min-height: 430px;
   background: linear-gradient(to right, #1b75bc, #00aeef);
   position: relative; }
-  .home-ways-to-learn .circuit-background {
+  .fundamental-tutorial .circuit-background {
     display: flex;
     height: 100%;
     width: 100%; }
-  .home-ways-to-learn .circuit-background-left {
+  .fundamental-tutorial .circuit-background-left {
     height: 100%;
     background-image: url("../../assets/circuit.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat; }
-  .home-ways-to-learn .circuit-background-right {
+  .fundamental-tutorial .circuit-background-right {
     height: 100%;
     background-image: url("../../assets/circuit.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -24,137 +24,42 @@
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH"; }
-  .home-ways-to-learn .container {
+  .fundamental-tutorial .container {
     position: absolute;
     top: -60px;
     left: 0px;
     right: 0px; }
-  .home-ways-to-learn .content {
+  .fundamental-tutorial .content {
     margin: 0px 15px;
     background-color: #f4f8fb;
-    padding-top: 45px;
-    padding-bottom: 145px;
-    height: 900px;
+    padding-top: 130px;
+    padding-bottom: 1px;
     text-align: center;
     border-radius: 5px;
     box-shadow: 1px 5px 25px 0 rgba(0, 0, 0, 0.15); }
-    .home-ways-to-learn .content .text-big {
+    .fundamental-tutorial .content .text-big {
       font-weight: 700;
       color: #19243b; }
-    .home-ways-to-learn .content .comment {
-      padding-top: 10px;
-      font-weight: 500;
-      color: #808ba5;
-      margin-bottom: 15px; }
-    .home-ways-to-learn .content .contents {
-      position: relative; }
-    .home-ways-to-learn .content .line {
-      width: 100%;
-      height: 1px;
-      background-color: #e7f2fc;
-      position: absolute;
-      top: 144px; }
-    .home-ways-to-learn .content .content-area {
-      padding: 0px 82px; }
-    @media (max-width: 768px) {
-      .home-ways-to-learn .content .content-area {
-        padding: 0px 30px; } }
-    .home-ways-to-learn .content .content-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .home-ways-to-learn .content .content-item .pin {
-        width: 50px;
-        height: 40px; }
-      .home-ways-to-learn .content .content-item .main-content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding: 25px;
-        padding-bottom: 65px; }
-        .home-ways-to-learn .content .content-item .main-content .content-icon {
-          width: 60px;
-          height: 60px;
-          margin-bottom: 15px; }
-        .home-ways-to-learn .content .content-item .main-content .content-oval {
-          width: 8px;
-          height: 8px;
-          border-radius: 100%;
-          background-image: linear-gradient(to bottom, #ffc52d, #ff9314);
-          margin-bottom: 15px; }
-        .home-ways-to-learn .content .content-item .main-content .item-title {
-          font-weight: 700;
-          color: #19243b;
-          margin-bottom: 15px; }
-        .home-ways-to-learn .content .content-item .main-content .item-contents {
-          font-weight: 400;
-          color: #808ba5; }
-        @media (max-width: 768px) {
-          .home-ways-to-learn .content .content-item .main-content .item-contents {
-            display: none; } }
-      @media (max-width: 991px) {
-        .home-ways-to-learn .content .content-item .main-content {
-          padding: 20px 0px 45px; } }
-    @media (max-width: 991px) {
-      .home-ways-to-learn .content .line {
-        top: 139px; } }
-    .home-ways-to-learn .content .content-item:hover {
-      cursor: pointer; }
-      .home-ways-to-learn .content .content-item:hover .pin {
-        border-top: solid 3px #19243b; }
-      .home-ways-to-learn .content .content-item:hover .main-content {
-        background-image: linear-gradient(to bottom, #ffffff, #f4f8fb);
-        -webkit-box-shadow: 0px -8px 31px -14px rgba(0, 0, 0, 0.1);
-        -moz-box-shadow: 0px -8px 31px -14px rgba(0, 0, 0, 0.1);
-        box-shadow: 0px -8px 31px -14px rgba(0, 0, 0, 0.1); }
-        .home-ways-to-learn .content .content-item:hover .main-content .content-oval {
-          background-image: linear-gradient(225deg, #00aeef, #1b75bc);
-          border: 1px solid #ffffff;
-          box-shadow: 0 0 0 2px #1b75bc; }
-  @media (max-width: 1500px) {
-    .home-ways-to-learn .content {
-      padding-bottom: 50px; } }
-  @media (max-width: 1250px) {
-    .home-ways-to-learn .content {
-      padding-bottom: 0px; } }
+
+@media (max-width: 991px) {
+  .fundamental-tutorial {
+    height: 950px; } }
 
 @media (max-width: 768px) {
-  .home-ways-to-learn {
-    min-height: 350px; } }
-
-@media (max-width: 576px) {
-  .home-ways-to-learn {
+  .fundamental-tutorial {
     background: #f4f8fb;
-    min-height: 0;
-    height: 117px; }
-    .home-ways-to-learn .container {
+    height: auto;
+    padding-bottom: 30px; }
+    .fundamental-tutorial .container {
       position: relative;
       padding: 0px;
       top: 0; }
-      .home-ways-to-learn .container .content {
+      .fundamental-tutorial .container .content {
         background: none;
         border-radius: 0;
         box-shadow: none;
         padding: 0;
-        margin: 0; }
-        .home-ways-to-learn .container .content .line {
-          top: 69px; }
-        .home-ways-to-learn .container .content .title {
-          display: none; }
-        .home-ways-to-learn .container .content .comment {
-          display: none; }
-        .home-ways-to-learn .container .content .content-area {
-          padding: 0; }
-          .home-ways-to-learn .container .content .content-area .content-item {
-            padding: 0; }
-            .home-ways-to-learn .container .content .content-area .content-item .main-content {
-              padding-bottom: 0px;
-              width: 100%; }
-            .home-ways-to-learn .container .content .content-area .content-item .pin {
-              display: none; }
-          .home-ways-to-learn .container .content .content-area .content-icon {
-            width: 30px;
-            height: 30px; }
-    .home-ways-to-learn .circuit-background {
+        margin: 0;
+        padding-top: 40px; }
+    .fundamental-tutorial .circuit-background {
       display: none; } }

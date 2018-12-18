@@ -2,9 +2,6 @@ import React, { Component } from 'react'
 import HomePageBanner from '../../components/homePageBanner';
 import HomeWaysToLearn from '../../components/homeWaysToLearn';
 import bannerImage from '../../assets/banner-home-page.png';
-import manImage from '../../assets/man-01.png';
-import manImage3 from '../../assets/man-01@3x.png';
-import manImage2 from '../../assets/man-01@2x.png';
 import './home-page.css';
 
 export default class HomePage extends Component {
@@ -19,14 +16,6 @@ export default class HomePage extends Component {
           imgUrl={bannerImage}
         />
         <HomeWaysToLearn />
-        <div className="man-image">
-            <img
-                src={manImage}
-                srcSet={`${manImage2} 2x,
-                ${manImage3} 3x`}
-            />
-            <div className="oval"></div>
-        </div>
       </div>
     )
   }

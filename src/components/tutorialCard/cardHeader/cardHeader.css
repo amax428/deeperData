@@ -8,40 +8,30 @@
     z-index: -10; }
   .card__header--name {
     position: absolute;
-    top: 64%;
+    bottom: 45px;
     right: -5%;
-    width: 105px;
+    width: 40%;
+    min-width: 100px;
     height: 29px;
     border-radius: 25px;
     background-image: linear-gradient(to bottom, #ffc52d, #ff9314);
-    font-family: Roboto;
-    font-size: 10px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 0.4px;
+    font-weight: 700;
     color: #ffffff;
     text-align: left;
-    padding: 5px 10px; }
+    padding: 0px 10px;
+    display: flex;
+    align-items: center; }
   .card__header--photo {
     height: 25px;
     width: 25px;
     border-radius: 50%;
     position: absolute;
-    top: 58%;
+    bottom: 62px;
     right: 2%; }
   .card__header--title {
-    height: 20%;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: 0.7px;
+    font-weight: 700;
     color: #ffffff;
     background-color: #19243b;
     text-align: left;
-    padding: 10px 10px 20px 10px;
-    vertical-align: middle; }
+    vertical-align: middle;
+    padding: 5px 10px; }

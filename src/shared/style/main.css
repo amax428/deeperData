@@ -47,14 +47,28 @@ body {
 @media (max-width: 991px) {
   .text-biggest {
     font-size: 40px; }
+  .text-big {
+    font-size: 30px; }
+  .text-medium {
+    font-size: 16px; }
   .text-small {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .text-smaller {
+    font-size: 11px; }
+  .text-smallest {
+    font-size: 10px; } }
 
 @media (max-width: 576px) {
   .text-biggest {
     font-size: 40px; }
+  .text-big {
+    font-size: 25px; }
   .text-small {
-    font-size: 12px; } }
+    font-size: 11px; }
+  .text-smaller {
+    font-size: 10px; }
+  .text-smallest {
+    font-size: 9px; } }
 
 @media (min-width: 991px) {
   .text-padding-for-col {

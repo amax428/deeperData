@@ -22,6 +22,7 @@
     margin-left: 20px;
     .nav-link {
       padding: 5px 15px;
+      color: $grey;
     }
   }
   .nav-item:hover {
@@ -35,6 +36,12 @@
   }
   .m-2 {
     margin: 0px!important;
+  }
+  .icon-area {
+    display: flex;
+    .extra-icon {
+      margin-left: 20px;
+    }
   }
 }
 .navbar {

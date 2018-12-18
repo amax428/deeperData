@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import fundamentalIcon from '../../assets/fundamentals.png';
 import learningIcon from '../../assets/learning.png';
 import trainingIcon from '../../assets/training.png';
+import manImage from '../../assets/man-01.png';
 import './homeWaysToLearn.css';
 
 export default class HomeWaysToLearn extends Component {
@@ -67,6 +68,12 @@ export default class HomeWaysToLearn extends Component {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="man-image">
+            <img
+                src={manImage}
+            />
+            <div className="oval"></div>
           </div>
         </div>
       </div>

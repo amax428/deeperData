@@ -3,6 +3,19 @@ import brandIcon from '../../assets/brand.png';
 import './header.css';
 
 export default class Header extends Component {
+  constructor(props) {
+    super(props);
+    
+    this.state = {
+      isLoggedin: false,
+    }
+
+    this.changeLoggedin = this.changeLoggedin.bind(this);
+  }
+
+  changeLoggedin = (value) => {
+    this.setState({isLoggedin: value});
+  }
   render() {
     return (
       <div className="header-page">
@@ -12,9 +25,9 @@ export default class Header extends Component {
               <img src={brandIcon} className="brand-icon" />
               DeeperData
             </a>
-            <button className="navbar-toggler text-right" type="button" data-toggle="collapse" data-target="#myNavbar">
+            {!this.state.isLoggedin && <button className="navbar-toggler text-right" type="button" data-toggle="collapse" data-target="#myNavbar">
               <span className="navbar-toggler-icon"></span>
-            </button>
+            </button>}
             <div className="collapse navbar-collapse justify-content-end text-right" id="myNavbar">
               <ul className="navbar-nav">
                 <li className="nav-item">
@@ -36,6 +49,20 @@ export default class Header extends Component {
                 </li>
               </ul>
             </div>
+            {this.state.isLoggedin && (
+              <div className="icon-area">
+                <div className="extra-icon">
+                  <a href="#">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </div>
+                <div className="extra-icon">
+                  <a href="#">
+                    <i class="fas fa-cart-plus"></i>
+                  </a>
+                </div>
+              </div>
+            )}
           </nav>
         </div>
       </div>
