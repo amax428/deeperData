@@ -151,7 +151,7 @@
             margin-bottom: 15px;
 
             @media (max-width: $small) {
-              margin-bottom: 0px;
+              margin-bottom: 0;
             }
             i{
               width: 20px;
@@ -577,6 +577,10 @@
           letter-spacing: 0.8px;
           color: #808ba5;
         }
+
+        svg{
+          vertical-align: top !important;
+        }
       }
 
     }
@@ -893,15 +897,17 @@
 }
 
 .for-smaller-screen{
-  display: none;
+  opacity: 0;
+  height: 0;
+
   @media (max-width: $larger) {
-    display: initial;
+    opacity: 1;
+    height: auto;
   }
 
   .learning-page__section-2-photo{
     text-align: center;
   }
-
   .learning-page__section-2-subscribe-email{
     display: flex;
     flex-direction: row;
@@ -910,6 +916,7 @@
     input{
       margin-right: auto;
     }
+
 
     .learning-page__section-2-subscribe-email-icon{
       margin-top: .6%;
@@ -1008,8 +1015,9 @@
 
 .min-stars{
   svg{
-    width: 15px;
-    height: 16px;
+    width: 15px !important;
+    height: 16px !important;
+    display: inline !important;
   }
 }
 

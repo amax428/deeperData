@@ -117,7 +117,7 @@
             margin-bottom: 15px; }
             @media (max-width: 576px) {
               .learning-page__section-1-wwd-details-points-el {
-                margin-bottom: 0px; } }
+                margin-bottom: 0; } }
             .learning-page__section-1-wwd-details-points-el i {
               width: 20px;
               height: 20px;
@@ -406,6 +406,8 @@
           line-height: normal;
           letter-spacing: 0.8px;
           color: #808ba5; }
+        .learning-page__section-2-more-1 svg {
+          vertical-align: top !important; }
     .learning-page__section-2-subscribe {
       display: flex;
       flex-direction: column;
@@ -642,10 +644,12 @@
   margin-right: 3px; }
 
 .for-smaller-screen {
-  display: none; }
+  opacity: 0;
+  height: 0; }
   @media (max-width: 1200px) {
     .for-smaller-screen {
-      display: initial; } }
+      opacity: 1;
+      height: auto; } }
   .for-smaller-screen .learning-page__section-2-photo {
     text-align: center; }
   .for-smaller-screen .learning-page__section-2-subscribe-email {
@@ -721,5 +725,6 @@
       font-weight: 700; } }
 
 .min-stars svg {
-  width: 15px;
-  height: 16px; }
+  width: 15px !important;
+  height: 16px !important;
+  display: inline !important; }

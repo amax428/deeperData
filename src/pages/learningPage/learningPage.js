@@ -11,7 +11,7 @@ import man from '../../assets/man.png';
 import line from '../../assets/line.PNG';
 import facebookIcon from '../../assets/facebook.png';
 import twitterIcon from '../../assets/twitter.png';
-import linkedInIcon from '../../assets/linkedin.png';
+import linkedInIcon from '../../assets/linkedIn.png';
 
 export default class LearningPage extends Component{
     state = {
@@ -30,6 +30,7 @@ export default class LearningPage extends Component{
     // componentDidMount() {
     //     this.props.changeLoggedin(true);
     // }
+
 
     // componentWillUnmount() {
     //     this.props.changeLoggedin(false);
@@ -105,14 +106,14 @@ export default class LearningPage extends Component{
                                 <div className="learning-page__section-1-path"></div>
                                 <div className="learning-page__section-2-more">
                                     <div className="learning-page__section-2-more-1">
-                                        <div className="text-small">
+                                        <div className="text-small text">
                                             $100 per person
                                         </div>
                                         <div className="min-stars text-small">
                                             {this.state.stars} (12 Reviews)
                                         </div>
                                     </div>
-                                    <div className="normal-button text-small">What we’ll do</div>
+                                    <div className="normal-button text-small text">What we’ll do</div>
                                 </div>
                                 <div className="learning-page__section-1-path"></div>
                                 <div className="learning-page__section-2-subscribe ">
