@@ -1,4 +1,6 @@
 import React,{Component} from 'react';
+import Header from '../../components/header';
+import HomeWaysToLearn from '../../components/homeWaysToLearn';
 import './learningPage.css';
 import SvgComponent from "../../shared/style/svgComponents/svgComponent";
 import partnersImg from '../../assets/partners.PNG';
@@ -17,9 +19,9 @@ export default class LearningPage extends Component{
     state = {
         stars : []
     };
-    starsHandler=()=>{
-        for(let i=0;i<5;i++){
-            if(i<4){
+    starsHandler = () => {
+        for(let i = 0; i < 5; i++){
+            if(i < 4){
                 this.state.stars.push(<SvgComponent name="full-star"/>);
             }else{
                 this.state.stars.push(<SvgComponent name="empty-star"/>);
@@ -27,19 +29,11 @@ export default class LearningPage extends Component{
         }
     };
 
-    // componentDidMount() {
-    //     this.props.changeLoggedin(true);
-    // }
-
-
-    // componentWillUnmount() {
-    //     this.props.changeLoggedin(false);
-    // }
-    
     render(){
         this.starsHandler();
         return(
             <div>
+                <Header isLoggedin={true}/>
                 <div className="learning-page">
                     <div className="learning-page__section-1">
                         <div className="learning-page__section-1--title">
@@ -329,6 +323,7 @@ export default class LearningPage extends Component{
                             <a className="footer-nav-icon" href="http://www.linkedin.com"><img className="social-icons" src={linkedInIcon}></img></a>
                         </div>
                     </div>
+                    <HomeWaysToLearn />
                 </div>
             </div>
 

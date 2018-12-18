@@ -656,6 +656,8 @@
     color: #ffffff;
     background-image: linear-gradient(249deg, #00aeef, #1b75bc);
   }
+
+
 }
 
 .heading-tertiary{
@@ -1010,9 +1012,22 @@
       font-weight: 700;
     }
   }
-
+  @media (min-width: $small) {
+    .home-ways-to-learn {
+      display: none;
+    }
+  }
 }
-
+@media (max-width: $medium) {
+  .header-page {
+    .nav-item .nav-link {
+      padding: 5px 0px;
+    }
+    .brand-text {
+      display: none;
+    }
+  }
+}
 .min-stars{
   svg{
     width: 15px !important;
@@ -1020,6 +1035,7 @@
     display: inline !important;
   }
 }
+
 
 
 

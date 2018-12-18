@@ -7,23 +7,18 @@ export default class Header extends Component {
     super(props);
     
     this.state = {
-      isLoggedin: false,
+      isLoggedin: this.props.isLoggedin,
     }
-
-    this.changeLoggedin = this.changeLoggedin.bind(this);
   }
 
-  changeLoggedin = (value) => {
-    this.setState({isLoggedin: value});
-  }
   render() {
     return (
       <div className="header-page">
         <div className="container">
-          <nav className="navbar navbar-expand-lg navbar-light bg-no text-small">
+          <nav className="navbar navbar-expand-sm navbar-light bg-no text-small">
             <a className="navbar-brand text-small" href="/">
               <img src={brandIcon} className="brand-icon" />
-              DeeperData
+              <div className="brand-text">DeeperData</div>
             </a>
             {!this.state.isLoggedin && <button className="navbar-toggler text-right" type="button" data-toggle="collapse" data-target="#myNavbar">
               <span className="navbar-toggler-icon"></span>

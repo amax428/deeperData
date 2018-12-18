@@ -723,6 +723,15 @@
       width: fit-content;
       padding: 5px 10px;
       font-weight: 700; } }
+  @media (min-width: 576px) {
+    .footer-for-small-screen .home-ways-to-learn {
+      display: none; } }
+
+@media (max-width: 768px) {
+  .header-page .nav-item .nav-link {
+    padding: 5px 0px; }
+  .header-page .brand-text {
+    display: none; } }
 
 .min-stars svg {
   width: 15px !important;
